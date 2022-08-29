@@ -1,0 +1,25 @@
+<!-- cards/templates/cards/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <style>
+        a, a:visited {
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flashcards</h1>
+        {% include "cards/navigation.html" %}
+    </header>
+    <main>
+        {% block content %}
+            <h2>Welcome to your Flashcards app</h2>
+        {% endblock content %}
+    </main>
+</body>
+</html>
